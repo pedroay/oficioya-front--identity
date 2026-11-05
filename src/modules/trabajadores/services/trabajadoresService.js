@@ -7,3 +7,4 @@ export function listarTrabajadores(token) {
 export function obtenerTrabajador(id, token) {
   return request(`/trabajadores/${id}`, { token });
 }
+

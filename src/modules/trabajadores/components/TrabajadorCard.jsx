@@ -11,3 +11,4 @@ function TrabajadorCard({ trabajador }) {
 }
 
 export default TrabajadorCard;
+

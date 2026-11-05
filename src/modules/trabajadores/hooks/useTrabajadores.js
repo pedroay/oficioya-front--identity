@@ -23,3 +23,4 @@ export function useTrabajadores() {
 
   return { trabajadores, cargando, error };
 }
+
