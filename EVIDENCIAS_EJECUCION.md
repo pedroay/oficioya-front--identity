@@ -7,7 +7,7 @@ Este documento presenta las evidencias de ejecución de cada bloque del proyecto
 
 ## Bloque 1 — Base comun 
 
-![Ejecución del Bloque 1](../oficioya-front/src/docs/images/bloque1.png)
+![Ejecución del Bloque 1](../src/docs/images/bloque1.png)
 
 ## Bloque 2 — Lista de trabajadores
 
