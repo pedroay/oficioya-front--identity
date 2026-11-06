@@ -1,16 +1,25 @@
-# React + Vite
+# OficioYa - Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para la plataforma OficioYa desarrollada en React + Vite.
 
-Currently, two official plugins are available:
+## Equipo de trabajo 
+- Samuel Argalle 
+- Pedro Ayala 
+- Javier Caicedo 
+- Juanita Rubiano
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Preguntas teoricas 
+[**Preguntas teóricas y sus respuestas**](PREGUNTAS_TEORICAS.md)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cómo ejecutarlo (npm install y npm run dev) y qué necesita: el back corriendo en el puerto 8080, con el enlace al repositorio del back.
 
-## Expanding the ESLint configuration
+[**Instalación y ejecución del proyecto**](INSTALACION_Y_EJECUCION.md)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## El árbol de carpetas de src/modules/ y una frase sobre qué contiene cada módulo.
+
+[**Estructura de carpetas y módulos del proyecto**](ESTRUCTURA_PROYECTO.md)
+
+## Evidencia de cada bloque 
+
+[Evidencias de ejecución de los bloques](EVIDENCIAS_EJECUCION.md)
