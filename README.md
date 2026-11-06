@@ -2,14 +2,24 @@
 
 Aplicación web para la plataforma OficioYa desarrollada en React + Vite.
 
-## Requisitos previos
+## Equipo de trabajo 
+- Samuel Argalle 
+- Pedro Ayala 
+- Javier Caicedo 
+- Juanita Rubiano
 
-- Node.js (v20.19+ o v22.12+)
-- Backend de OficioYa ejecutándose en `http://localhost:8080`
-  - Repositorio del backend: https://github.com/DOSW-2026-2/security
 
-## Instrucciones de ejecución
+## Preguntas teoricas 
+[**Preguntas teóricas y sus respuestas**](PREGUNTAS_TEORICAS.md)
 
-1. Instalar dependencias:
-   ```bash
-   npm install
+## Cómo ejecutarlo (npm install y npm run dev) y qué necesita: el back corriendo en el puerto 8080, con el enlace al repositorio del back.
+
+[**Instalación y ejecución del proyecto**](INSTALACION_Y_EJECUCION.md)
+
+## El árbol de carpetas de src/modules/ y una frase sobre qué contiene cada módulo.
+
+[**Estructura de carpetas y módulos del proyecto**](ESTRUCTURA_PROYECTO.md)
+
+## Evidencia de cada bloque 
+
+[Evidencias de ejecución de los bloques](EVIDENCIAS_EJECUCION.md)
