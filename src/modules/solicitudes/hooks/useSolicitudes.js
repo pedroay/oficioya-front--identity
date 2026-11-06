@@ -1,6 +1,7 @@
+
 import { useCallback, useEffect, useState } from 'react';
 import { useAuth } from '../../auth/hooks/useAuth';
-import { listarSolicitudes } from '../services/solicitudesService';
+import { listarSolicitudes, cambiarEstado } from '../services/solicitudesService';
 
 export function useSolicitudes() {
   const { token, logout } = useAuth();
@@ -8,15 +9,15 @@ export function useSolicitudes() {
   const [cargando, setCargando] = useState(true);
   const [error, setError] = useState(null);
 
-  // La carga vive en una función aparte para poder volver a llamarla
-  // desde el bloque 6 (después de aceptar, rechazar o cancelar)
+  // Obtiene las solicitudes desde el backend.
   const cargar = useCallback(async () => {
     try {
       const datos = await listarSolicitudes(token);
       setSolicitudes(datos);
+      setError(null);
     } catch (e) {
       if (e.status === 401) {
-        logout(); // token vencido: volver al login
+        logout();
       } else {
         setError(e.message);
       }
@@ -29,5 +30,28 @@ export function useSolicitudes() {
     cargar();
   }, [cargar]);
 
-  return { solicitudes, cargando, error };
+  // Ejecuta una acción sobre una solicitud.
+  async function ejecutarAccion(id, accion) {
+    setError(null);
+
+    try {
+      await cambiarEstado(id, accion, token);
+
+      // Actualiza la lista después de una acción exitosa.
+      await cargar();
+    } catch (e) {
+      if (e.status === 401) {
+        logout();
+      } else {
+        setError(e.message);
+      }
+    }
+  }
+
+  return {
+    solicitudes,
+    cargando,
+    error,
+    ejecutarAccion
+  };
 }
